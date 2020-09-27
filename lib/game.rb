@@ -48,7 +48,9 @@ class Game
     @board.full? && !won? 
   end 
   
-   
+  def turn 
+    
+  end 
   
 end 
 

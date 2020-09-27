@@ -51,7 +51,7 @@ class Game
   
   def turn 
     puts "Please enter a number 1-9:"
-    @user_input = current_player.move(@board)   #uses move method from the human class 
+    @user_input = current_player.move(@board)   #uses move method from the human class inheriting from the player class 
   end 
   
 end 

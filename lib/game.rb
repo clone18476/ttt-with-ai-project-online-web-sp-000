@@ -25,7 +25,8 @@ class Game
   end 
   
   def winner
-    
+    if WIN_COMBINATIONS.won?
+      @winner = @board.cells[winning piece]
   end 
   
   def over?

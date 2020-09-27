@@ -20,7 +20,7 @@ class Game
   end 
   
   def current_player
-    if 
+    board.turn_count.odd? ? player_2 : player_1
   end 
   
 end 

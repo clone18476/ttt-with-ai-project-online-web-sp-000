@@ -54,9 +54,11 @@ class Game
     @user_input = current_player.move(@board)   #uses move method from the human class inheriting from the player class 
     if @board.valid_move?(@user_input)
       @board.update(@user_input, current_player)
+      # if the user_input is valid then it updates the board with the current_player
     else puts "Please enter a number 1-9:"
       @board.display
       turn
+      # if user_input is invalid then it asks for input again, displays the board, and starts the turn method over
     end 
     @board.display
   end 

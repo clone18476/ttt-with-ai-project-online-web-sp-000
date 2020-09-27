@@ -63,7 +63,7 @@ class Game
     @board.display
   end 
   
-  def play(input) 
+  def play
     
   end 
   

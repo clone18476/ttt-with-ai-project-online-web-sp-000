@@ -64,7 +64,7 @@ class Game
   end 
   
   def play(input)
-    turn
+    turn until over?
   end 
   
   

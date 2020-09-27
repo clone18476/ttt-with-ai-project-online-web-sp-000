@@ -49,6 +49,7 @@ class Game
   end 
   
   def turn 
+    puts "Please enter a number 1-9:"
     
   end 
   

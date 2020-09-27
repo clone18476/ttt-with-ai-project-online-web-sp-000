@@ -24,6 +24,10 @@ class Game
     board.turn_count % 2 == 0 ? player_1 : player_2
   end 
   
+  def winner
+    
+  end 
+  
   def over?
     won? || draw?  
     # if either the won? or the draw? methods return true, the over? method returns true
@@ -35,13 +39,12 @@ class Game
       @board.cells[winner[0]] == @board.cells[winner[1]] &&
       @board.cells[winner[1]] == @board.cells[winner[2]] 
     end
-     
-     
   end 
   
   def draw?
     @board.full? && !won? 
   end 
+  
    
   
 end 

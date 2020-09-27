@@ -64,7 +64,7 @@ class Game
   end 
   
   def play(input)
-    gets input
+    input
   end 
   
   

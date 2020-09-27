@@ -32,9 +32,9 @@ class Game
   def won?
     # need to iterated through each combo and see whether or not in each of those cells is the same character
     WIN_COMBINATIONS.detect do |winner|
-      @board.cells[winner[0]] ==   #baord array, first cells
-      @board.cells[winner[1]]    #baord array, second cells
-      @board.cells[winner[2]]    #baord array, third cells
+      @board.cells[winner[0]] == @board.cells[winner[1]] == @board.cells[winner[2]] 
+     
+     
   end 
   
   def draw?

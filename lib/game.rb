@@ -63,8 +63,8 @@ class Game
     @board.display
   end 
   
-  def play(input)
-    turn until over?
+  def play
+    turn
   end 
   
   

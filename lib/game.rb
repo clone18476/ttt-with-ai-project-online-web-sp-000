@@ -25,7 +25,8 @@ class Game
   end 
   
   def over?
-    won? || draw?
+    won? || draw?  
+    # if either the won? or the draw? methods return true, the over? method returns true
   end 
   
   def won?

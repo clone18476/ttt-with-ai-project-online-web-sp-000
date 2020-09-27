@@ -52,6 +52,13 @@ class Game
   def turn 
     puts "Please enter a number 1-9:"
     @user_input = current_player.move(@board)   #uses move method from the human class inheriting from the player class 
+    if @board.valid_move?(@user_input)
+      @board.update(@user_input, current_player)
+    else puts "Please enter a number 1-9:"
+      @board.display
+      turn
+    end 
+    @board.display
   end 
   
 end 

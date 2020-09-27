@@ -2,7 +2,7 @@ class Board
   require 'pry'
   attr_accessor :cells 
   
-  def initialize()  #set cerlls of board to 9 element array of empty strings, instaed of doing the same thing as whats in the reset! method, we just need to call our reset! method
+  def initialize()  #set cells of board to 9 element array of empty strings, instaed of doing the same thing as whats in the reset! method, we just need to call our reset! method
     reset!
   end   
   
